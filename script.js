@@ -5,7 +5,6 @@ document.body.style.flexDirection = "column";
 document.body.style.padding = "0 2%";
 document.body.style.backgroundColor = 'black';
 
-
 const header = document.createElement("div");
 document.body.appendChild(header);
 
