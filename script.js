@@ -164,6 +164,7 @@ calcularbtn.addEventListener("click", function() {
     saida.style.fontFamily = "'Chakra Petch', sans-serif";
     saida.style.width = "70%";
     saida.style.margin = ".5% 1%";
+    saida.style.fontw
     saida.style.padding = "1% 1%";
     saida.style.border = "2px solid #141301";
     saida.style.borderRadius = "4px";
