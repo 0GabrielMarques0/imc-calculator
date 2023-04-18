@@ -3,16 +3,16 @@ document.body.style.justifyContent = "center";
 document.body.style.alignItems = "center";
 document.body.style.flexDirection = "column";
 document.body.style.padding = "0 2%";
-document.body.style.backgroundColor = 'black';
+document.body.style.backgroundColor = '#221D23';
 
 const header = document.createElement("div");
 document.body.appendChild(header);
 
-header.style.backgroundColor = 'blue';
+header.style.backgroundColor = '#5762D5';
 header.style.width = "100%";
 header.style.height = "100%";
 header.style.padding = "2% 2%"
-header.style.border = "2px solid white";
+header.style.border = "2px solid #fff";
 header.style.display = "flex";
 header.style.justifyContent = "center";
 header.style.alignItems = "center";
@@ -23,7 +23,7 @@ h1.textContent = "IMCalculator";
 header.appendChild(h1);
 h1.style.fontFamily = "'Chakra Petch', sans-serif";
 h1.style.fontSize = "300%";
-h1.style.color = "white";
+h1.style.color = "#141301";
 
 const inputName = document.createElement("input");
 inputName.placeholder = "Digite seu nome";
@@ -32,17 +32,20 @@ header.appendChild(inputName);
 inputName.style.width = "50%";
 inputName.style.margin = ".5% 1%";
 inputName.style.padding = "1% 1%";
-inputName.style.border = "2px solid black";
+inputName.style.border = "2px solid #141301";
 inputName.style.borderRadius = "5px";
+inputName.style.outline = "none";
 inputName.style.transition = "0.8s";
 inputName.style.fontFamily = "'Chakra Petch', sans-serif";
 inputName.addEventListener("mouseenter", function (){
-    inputName.style.backgroundColor = "black";
-    inputName.style.color = "white";
+    inputName.style.backgroundColor = "#141301";
+    inputName.style.color = "#fff";
+    inputName.style.border = "2px solid #fff";
 });
 inputName.addEventListener("mouseleave", function (){
-    inputName.style.backgroundColor = "white";
-    inputName.style.color = "black";
+    inputName.style.backgroundColor = "#fff";
+    inputName.style.color = "#141301";
+    inputName.style.border = "2px solid #141301";
 });
 
 const entrada = document.createElement("div");
@@ -58,17 +61,20 @@ entrada.appendChild(inputPeso);
 inputPeso.style.width = "25%";
 inputPeso.style.margin = ".5% 1%";
 inputPeso.style.padding = "1.5% 1%";
-inputPeso.style.border = "2px solid black";
+inputPeso.style.border = "2px solid #141301";
 inputPeso.style.borderRadius = "5px";
+inputPeso.style.outline = "none";
 inputPeso.style.transition = "0.8s";
 inputPeso.style.fontFamily = "'Chakra Petch', sans-serif";
 inputPeso.addEventListener("mouseenter", function (){
-    inputPeso.style.backgroundColor = "black";
-    inputPeso.style.color = "white";
+    inputPeso.style.backgroundColor = "#141301";
+    inputPeso.style.color = "#fff";
+    inputPeso.style.border = "2px solid #fff";
 });
 inputPeso.addEventListener("mouseleave", function (){
-    inputPeso.style.backgroundColor = "white";
-    inputPeso.style.color = "black";
+    inputPeso.style.backgroundColor = "#fff";
+    inputPeso.style.color = "#141301";
+    inputPeso.style.border = "2px solid #141301";
 });
 
 const inputAltura = document.createElement("input");
@@ -78,17 +84,20 @@ entrada.appendChild(inputAltura);
 inputAltura.style.width = "25%";
 inputAltura.style.margin = ".5% 1%";
 inputAltura.style.padding = "1.5% 1%";
-inputAltura.style.border = "2px solid black";
+inputAltura.style.border = "2px solid #141301";
 inputAltura.style.borderRadius = "5px";
+inputAltura.style.outline = "none";
 inputAltura.style.transition = "0.8s";
 inputAltura.style.fontFamily = "'Chakra Petch', sans-serif";
 inputAltura.addEventListener("mouseenter", function (){
-    inputAltura.style.backgroundColor = "black";
-    inputAltura.style.color = "white";
+    inputAltura.style.backgroundColor = "#141301";
+    inputAltura.style.color = "#fff";
+    inputAltura.style.border = "2px solid #141301";
 });
 inputAltura.addEventListener("mouseleave", function (){
-    inputAltura.style.backgroundColor = "white";
-    inputAltura.style.color = "black";
+    inputAltura.style.backgroundColor = "#fff";
+    inputAltura.style.color = "#141301";
+    inputAltura.style.border = "2px solid #141301";
 });
 
 const inputIdade = document.createElement("input");
@@ -98,38 +107,43 @@ entrada.appendChild(inputIdade);
 inputIdade.style.width = "25%";
 inputIdade.style.margin = ".5% 1%";
 inputIdade.style.padding = "1.5% 1%";
-inputIdade.style.border = "2px solid black";
+inputIdade.style.border = "2px solid #141301";
 inputIdade.style.borderRadius = "5px";
+inputIdade.style.outline = "none";
 inputIdade.style.transition = "0.8s";
 inputIdade.style.fontFamily = "'Chakra Petch', sans-serif";
 inputIdade.addEventListener("mouseenter", function (){
-    inputIdade.style.backgroundColor = "black";
-    inputIdade.style.color = "white";
+    inputIdade.style.backgroundColor = "#141301";
+    inputIdade.style.color = "#fff";
+    inputIdade.style.border = "2px solid #fff";
 });
 inputIdade.addEventListener("mouseleave", function (){
-    inputIdade.style.backgroundColor = "white";
-    inputIdade.style.color = "black";
+    inputIdade.style.backgroundColor = "#fff";
+    inputIdade.style.color = "#141301";
+    inputIdade.style.border = "2px solid #141301";
 });
 
 const calcularbtn = document.createElement("button");
 calcularbtn.textContent = "Calcular IMC";
 header.appendChild(calcularbtn);
-
-calcularbtn.style.backgroundColor = "black";
+calcularbtn.style.backgroundColor = "#000";
 calcularbtn.style.width = "35%";
-calcularbtn.style.margin = "2% 1% 0 1%";
+calcularbtn.style.margin = "2% 1% 1% 1%";
 calcularbtn.style.padding = "1% 1%";
-calcularbtn.style.border = "1px solid white";
+calcularbtn.style.border = "1px solid #fff";
 calcularbtn.style.borderRadius = "5px";
+inputAltura.style.outline = "none";
 calcularbtn.style.fontFamily = "'Chakra Petch', sans-serif";
-calcularbtn.style.color = "white";
-calcularbtn.style.transition = "1s";
+calcularbtn.style.color = "#fff";
+calcularbtn.style.transition = ".3s";
 
 calcularbtn.addEventListener("mouseenter", function (){
-    calcularbtn.style.backgroundColor = "#333333";
+    calcularbtn.style.backgroundColor = "#141301";
+    calcularbtn.style.transform = "scale(1.05)"
 });
 calcularbtn.addEventListener("mouseleave", function (){
-    calcularbtn.style.backgroundColor = "black";
+    calcularbtn.style.backgroundColor = "#000";
+    calcularbtn.style.transform = "scale(1)"
 });
 
 calcularbtn.addEventListener("click", function() {
@@ -139,6 +153,10 @@ calcularbtn.addEventListener("click", function() {
     const idade = document.getElementById("idade").value;
     const imc = (p/(al*al)).toFixed(1);
 
+    if (!no && !p && !al && !idade) {
+        return
+    } 
+
     const saida = document.createElement("div");
     header.appendChild(saida);
     saida.style.display = "flex";
@@ -147,23 +165,29 @@ calcularbtn.addEventListener("click", function() {
     saida.style.width = "70%";
     saida.style.margin = ".5% 1%";
     saida.style.padding = "1% 1%";
-    saida.style.border = "2px solid black";
+    saida.style.border = "2px solid #141301";
     saida.style.borderRadius = "4px";
     
     if (imc < 18.5){
-        saida.style.backgroundColor = "green";
+        saida.style.backgroundColor = "#0EAD69";
         saida.textContent = `Olá ${no}! Você tem ${idade} anos e seu IMC é: ${imc}, você está abaixo do peso ideal!`;
     } else if (imc >= 18.5 && imc < 24.9){
-        saida.style.backgroundColor = "greenyellow";
+        saida.style.backgroundColor = "#98CE00";
         saida.textContent = `Olá ${no}! Você tem ${idade} anos e seu IMC é: ${imc}, você está no peso ideal!`;
     } else if (imc >= 24.9 && imc < 29.9){
-        saida.style.backgroundColor = "orange";
+        saida.style.backgroundColor = "#FF9914";
         saida.textContent = `Olá ${no}! Você tem ${idade} anos e seu IMC é: ${imc}, você está acima do peso ideal!`;
     } else {
-        saida.style.backgroundColor = "orangered";
+        saida.style.backgroundColor = "#ED6A5A";
         saida.textContent = `Olá ${no}! Você tem ${idade} anos e seu IMC é: ${imc}, você está muito acima do peso ideal!`;
     }
+
+    document.getElementById("nome").value = ("");
+    document.getElementById("peso").value = ("");
+    document.getElementById("altura").value = ("");
+    document.getElementById("idade").value = ("");
 })
+
 
 const legenda = document.createElement("footer");
 header.appendChild(legenda);
@@ -176,43 +200,43 @@ legenda.style.fontFamily = "'Chakra Petch', sans-serif";
 const pesobaixo = document.createElement("div");
 legenda.appendChild(pesobaixo);
 pesobaixo.textContent = "Abaixo do peso";
-pesobaixo.style.backgroundColor = "green";
+pesobaixo.style.backgroundColor = "#0EAD69";
 pesobaixo.style.width = "15%";
 pesobaixo.style.margin = "1% .5%";
 pesobaixo.style.padding = ".5% .2%";
-pesobaixo.style.border = "2px solid black";
+pesobaixo.style.border = "2px solid #141301";
 pesobaixo.style.borderRadius = "5px";
 pesobaixo.style.textAlign = "center";
 
 const pesoNormal = document.createElement("div");
 legenda.appendChild(pesoNormal);
 pesoNormal.textContent = "Peso Normal";
-pesoNormal.style.backgroundColor = "greenyellow";
+pesoNormal.style.backgroundColor = "#98CE00";
 pesoNormal.style.width = "15%";
 pesoNormal.style.margin = ".5% .5%";
 pesoNormal.style.padding = ".5% .2%";
-pesoNormal.style.border = "2px solid black";
+pesoNormal.style.border = "2px solid #141301";
 pesoNormal.style.borderRadius = "5px";
 pesoNormal.style.textAlign = "center";
 
 const sobrePeso = document.createElement("div");
 legenda.appendChild(sobrePeso);
 sobrePeso.textContent = "Sobrepeso";
-sobrePeso.style.backgroundColor = "orange";
+sobrePeso.style.backgroundColor = "#FF9914";
 sobrePeso.style.width = "15%";
 sobrePeso.style.margin = ".5% .5%";
 sobrePeso.style.padding = ".5% .2%";
-sobrePeso.style.border = "2px solid black";
+sobrePeso.style.border = "2px solid #141301";
 sobrePeso.style.borderRadius = "5px";
 sobrePeso.style.textAlign = "center";
 
 const obesidade = document.createElement("div");
 legenda.appendChild(obesidade);
 obesidade.textContent = "Obesidade";
-obesidade.style.backgroundColor = "orangered";
+obesidade.style.backgroundColor = "#ED6A5A";
 obesidade.style.width = "15%";
 obesidade.style.margin = ".5% .5%";
-obesidade.style.border = "2px solid black";
+obesidade.style.border = "2px solid #141301";
 obesidade.style.padding = ".5% .2%";
 obesidade.style.borderRadius = "5px";
 obesidade.style.textAlign = "center";
