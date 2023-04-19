@@ -43,6 +43,7 @@ iconReset.addEventListener("click", function (){
 
 const inputName = document.createElement("input");
 inputName.placeholder = "Digite seu nome";
+inputName.setAttribute("type","text");
 inputName.id = "nome";
 header.appendChild(inputName);
 inputName.style.width = "50%";
@@ -72,6 +73,7 @@ entrada.style.justifyContent = "space-between";
 
 const inputPeso = document.createElement("input");
 inputPeso.placeholder = "Digite seu peso";
+inputPeso.setAttribute("type","number")
 inputPeso.id = "peso";
 entrada.appendChild(inputPeso);
 inputPeso.style.width = "25%";
@@ -94,10 +96,11 @@ inputPeso.addEventListener("mouseleave", function (){
 });
 
 const inputAltura = document.createElement("input");
-inputAltura.placeholder = "Digite sua altura";
+inputAltura.placeholder = "Digite sua altura(Ex: 1.70)";
+inputAltura.setAttribute("type","number")
 inputAltura.id = "altura";
 entrada.appendChild(inputAltura);
-inputAltura.style.width = "25%";
+inputAltura.style.width = "29%";
 inputAltura.style.margin = ".5% 1%";
 inputAltura.style.padding = "1.5% 1%";
 inputAltura.style.border = "2px solid #141301";
@@ -118,6 +121,7 @@ inputAltura.addEventListener("mouseleave", function (){
 
 const inputIdade = document.createElement("input");
 inputIdade.placeholder = "Digite sua idade";
+inputIdade.setAttribute("type","number")
 inputIdade.id = "idade";
 entrada.appendChild(inputIdade);
 inputIdade.style.width = "25%";
