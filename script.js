@@ -25,6 +25,22 @@ h1.style.fontFamily = "'Chakra Petch', sans-serif";
 h1.style.fontSize = "300%";
 h1.style.color = "#141301";
 
+
+const iconReset = document.createElement("img");
+header.appendChild(iconReset);
+iconReset.setAttribute("src","./assets/icon-reset.png");
+iconReset.style.position = "fixed"
+iconReset.style.right = "22%";
+iconReset.style.top ="19.5%";
+iconReset.style.transition = ".5s"
+iconReset.addEventListener("click", function (){
+    iconReset.style.transform = "scale(1.2) rotate(180deg)";
+    setTimeout(() => {
+        window.location.reload(true);
+    }, 500);
+})
+
+
 const inputName = document.createElement("input");
 inputName.placeholder = "Digite seu nome";
 inputName.id = "nome";
